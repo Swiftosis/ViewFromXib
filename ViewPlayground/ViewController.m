@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "MyView.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    MyView *view =  [MyView loadFromNib];
+    view.frame = (CGRect){20,20,250,400};
+    [self.view addSubview:view];
+    
+    view.myLabel.text = @"something in myLabel";
     // Do any additional setup after loading the view, typically from a nib.
 }
 

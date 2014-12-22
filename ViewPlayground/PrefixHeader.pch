@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  ViewPlayground
+//
+//  Created by Kocsis Olivér on 2014.12.18..
+//  Copyright (c) 2014 swiftosis. All rights reserved.
+//
+
+#ifndef ViewPlayground_PrefixHeader_pch
+#define ViewPlayground_PrefixHeader_pch
+
+//
+// Prefix header for all source files of the 'UtiTippek' target in the 'UtiTippek' project
+//
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "UIView+createFromXib.h"
+#endif
+
+#endif
